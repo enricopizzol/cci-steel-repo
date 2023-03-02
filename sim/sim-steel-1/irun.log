@@ -1,0 +1,67 @@
+irun(64): 15.20-s022: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s022: Started on Dec 13, 2022 at 22:06:00 -03
+irun
+	-f ../rtl/file_list.f
+		-smartorder
+		-ieee1364
+		-work work
+		-notimingchecks
+		-gui
+		-access +rw
+		../../rtl/riscv_steel_core.v
+		../tb/tb_riscv_steel_core.v
+Recompiling... reason: file '../tb/tb_riscv_steel_core.v' is newer than expected.
+	expected: Thu Sep  8 09:02:51 2022
+	actual:   Thu Sep  8 09:33:45 2022
+file: ../../rtl/riscv_steel_core.v
+  wire signed   [31:0]  signed_op1;
+            |
+ncvlog: *W,NOIEEE (../../rtl/riscv_steel_core.v,583|12): IEEE 1364 compliance warning: (signed net declaration).
+  wire signed   [31:0]  adder_second_operand_mux;
+            |
+ncvlog: *W,NOIEEE (../../rtl/riscv_steel_core.v,584|12): IEEE 1364 compliance warning: (signed net declaration).
+file: ../tb/tb_riscv_steel_core.v
+	module work.tb_riscv_steel_core:v
+		errors: 0, warnings: 0
+		Caching library 'work' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_riscv_steel_core
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.tb_riscv_steel_core:v <0x5dfecba2>
+			streams:  18, words: 15352
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                10      10
+		Registers:              75      75
+		Scalar wires:           84       -
+		Expanded wires:         32       1
+		Vectored wires:         67       -
+		Always blocks:          37      37
+		Initial blocks:          4       4
+		Cont. assignments:      60     117
+		Pseudo assignments:     23      23
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work.tb_riscv_steel_core:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /tools/cadence/rhel5/INCISIVE_15.20.022/tools/inca/files/ncsimrc
+ncsim> run 12us
+Running test programs from RISC-V Compatibility Test Framework v2.0.
+Ran until 12 US + 0
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_riscv_steel_core.z tb_riscv_steel_core.test_error_flag tb_riscv_steel_core.riscv_test_program_goldenref tb_riscv_steel_core.riscv_test_program tb_riscv_steel_core.reset tb_riscv_steel_core.ram tb_riscv_steel_core.n tb_riscv_steel_core.m tb_riscv_steel_core.k tb_riscv_steel_core.j tb_riscv_steel_core.instruction_in tb_riscv_steel_core.instruction_address tb_riscv_steel_core.i tb_riscv_steel_core.data_write_request tb_riscv_steel_core.data_write_mask tb_riscv_steel_core.data_rw_address tb_riscv_steel_core.data_out tb_riscv_steel_core.data_in tb_riscv_steel_core.current_test_goldenref_match tb_riscv_steel_core.current_test_goldenref
+Created probe 1
+ncsim> run
+Passed on test: 
+RISC-V Steel Core passed ALL tests from RISC-V Compatibility Test Framework v2.0.
+Simulation stopped via $stop(1) at time 64440 NS + 0
+ncsim> ^C
+ncsim> exit
+TOOL:	irun(64)	15.20-s022: Exiting on Dec 13, 2022 at 22:14:49 -03  (total: 00:08:49)

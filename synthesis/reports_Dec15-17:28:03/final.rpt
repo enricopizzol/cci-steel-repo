@@ -1,0 +1,46 @@
+
+
+Working Directory = /home/inf01185/enrico.pizzol/cci-2/steel/synthesis
+QoS Summary for riscv_steel_core
+========================================================================================
+Metric                  generic    map        syn_opt    syn_opt_low_incr final     
+========================================================================================
+Slack (ps):                123.8        0.0        0.0        0.0        0.0
+  R2R (ps):                123.8        0.0        0.0        0.0        0.0
+  I2R (ps):               1204.8      498.2      413.0      413.0      413.0
+  R2O (ps):             no_value   no_value   no_value   no_value   no_value
+  I2O (ps):             no_value   no_value   no_value   no_value   no_value
+  CG  (ps):               4721.0     2006.9     1854.0     1854.0     1854.0
+TNS (ps):                      0          0          0          0          0
+  R2R (ps):                  0.0        0.0        0.0        0.0        0.0
+  I2R (ps):                  0.0        0.0        0.0        0.0        0.0
+  R2O (ps):             no_value   no_value   no_value   no_value   no_value
+  I2O (ps):             no_value   no_value   no_value   no_value   no_value
+  CG  (ps):                  0.0        0.0        0.0        0.0        0.0
+Failing Paths:                 0          0          0          0          0
+Area:                     258488     183825     176926     176926     176926
+Instances:                  8878       7191       6817       6817       6817
+Utilization (%):            0.00       0.00       0.00       0.00       0.00
+Tot. Net Length (um):   no_value   no_value   no_value   no_value   no_value
+Avg. Net Length (um):   no_value   no_value   no_value   no_value   no_value
+Total Overflow H:              0          0          0          0          0
+Total Overflow V:              0          0          0          0          0
+Route Overflow H (%):   no_value   no_value   no_value   no_value   no_value
+Route Overflow V (%):   no_value   no_value   no_value   no_value   no_value
+========================================================================================
+CPU  Runtime (m:s):        00:40      08:46      00:30      00:05      00:07
+Real Runtime (m:s):        00:41      03:42      00:37      00:12      00:15
+CPU  Elapsed (m:s):        00:50      09:36      10:06      10:11      10:18
+Real Elapsed (m:s):        00:44      04:26      05:03      05:15      05:30
+Memory (MB):              592.34     666.38     666.38     666.38     666.38
+========================================================================================
+
+========================================================================================
+Flow Settings:
+========================================================================================
+Total Runtime (m:s): 05:34
+Total Memory (MB):   666.38
+Executable Version:  15.22
+========================================================================================
+
+

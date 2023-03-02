@@ -1,0 +1,40 @@
+[01/25 16:32:50     0s] 
+[01/25 16:32:50     0s] Cadence Innovus(TM) Implementation System.
+[01/25 16:32:50     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/25 16:32:50     0s] 
+[01/25 16:32:50     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[01/25 16:32:50     0s] Options:	
+[01/25 16:32:50     0s] Date:		Wed Jan 25 16:32:50 2023
+[01/25 16:32:50     0s] Host:		pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+[01/25 16:32:50     0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/25 16:32:50     0s] 
+[01/25 16:32:50     0s] License:
+[01/25 16:32:50     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[01/25 16:32:50     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/25 16:32:50     0s] **WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+[01/25 16:33:02    11s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[01/25 16:33:02    11s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[01/25 16:33:02    11s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[01/25 16:33:02    11s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[01/25 16:33:02    11s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[01/25 16:33:02    11s] @(#)CDS: CPE v15.20-p002
+[01/25 16:33:02    11s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[01/25 16:33:02    11s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[01/25 16:33:02    11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[01/25 16:33:02    11s] @(#)CDS: RCDB 11.6
+[01/25 16:33:02    11s] --- Running on pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB) ---
+[01/25 16:33:02    11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_64370_pgmicro01_enrico.pizzol_kUPMGX.
+
+[01/25 16:33:02    11s] 
+[01/25 16:33:02    11s] **INFO:  MMMC transition support version v31-84 
+[01/25 16:33:02    11s] 
+[01/25 16:33:02    11s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/25 16:33:02    11s] <CMD> suppressMessage ENCEXT-2799
+[01/25 16:33:03    11s] <CMD> getVersion
+[01/25 16:33:03    11s] Loading fill procedures ...
+[01/25 16:33:03    11s] **WARN: Tk package not loaded. The PVS fill DRC monitor is disabled.
+[01/25 18:33:07    14s] 
+[01/25 18:33:07    14s] *** Memory Usage v#1 (Current mem = 393.500M, initial mem = 162.844M) ***
+[01/25 18:33:07    14s] *** Message Summary: 0 warning(s), 0 error(s)
+[01/25 18:33:07    14s] 
+[01/25 18:33:07    14s] --- Ending "Innovus" (totcpu=0:00:13.6, real=2:00:17, mem=393.5M) ---

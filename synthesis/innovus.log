@@ -1,0 +1,25 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+Options:	-common_ui 
+Date:		Tue Dec 20 14:35:35 2022
+Host:		pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_655_pgmicro01_enrico.pizzol_fgYM4N.
+
+
+**INFO:  MMMC transition support version v31-84 
+
+Loading fill procedures ...
+[DEV]innovus 1> exit
+
+*** Memory Usage v#1 (Current mem = 456.504M, initial mem = 170.848M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:46.8, real=0:04:22, mem=456.5M) ---

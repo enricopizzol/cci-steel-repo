@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Tue Dec 13 22:06:03 -03 2022
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s022
+User: rafael.trevisan
+Host: pgmicro03
+Platform: Linux/x86_64/3.10.0-1160.80.1.el7.x86_64
+Started: Tue Dec 13 22:06:03 -03 2022
+Command: /tools/cadence/rhel5/INCISIVE_15.20.022/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:pgmicro03:54318 -64BIT -nocopyright
+Work Directory: /home/inf01185/rafael.trevisan/cci-2/steel/sim/sim-steel-1
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:06:05 -03 2022
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:06:16 -03 2022
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:06:21 -03 2022
+Connect to Simulator
+      Design: work.tb_riscv_steel_core:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s022
+        User: rafael.trevisan
+        Host: pgmicro03
+Time Started: Tue Dec 13 22:06:00 -03 2022
+  Process ID: 45616
+   Directory: /home/inf01185/rafael.trevisan/cci-2/steel/sim/sim-steel-1
+     Command: irun -f ../rtl/file_list.f
+
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:06:25 -03 2022
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:07:55 -03 2022
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:14:35 -03 2022
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Tue Dec 13 22:14:35 -03 2022
+invalid command name ".waveWindow0.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".waveWindow0.bottom.statusbar.indicator-autosave.autosave configure -image image267"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Tue Dec 13 22:14:35 -03 2022
+invalid command name ".waveWindow0.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".waveWindow0.bottom.statusbar.indicator-autosave.autosave configure -image image267"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Tue Dec 13 22:14:35 -03 2022
+invalid command name ".waveWindow0.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".waveWindow0.bottom.statusbar.indicator-autosave.autosave configure -image image267"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:14:49 -03 2022
+Exit NC-Sim: user
+      Design: work.tb_riscv_steel_core:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL: ncsim(64)       15.20-s022
+        User: rafael.trevisan
+        Host: pgmicro03
+Time Started: Tue Dec 13 22:06:00 -03 2022
+  Process ID: 45616
+   Directory: /home/inf01185/rafael.trevisan/cci-2/steel/sim/sim-steel-1
+     Command: irun -f ../rtl/file_list.f
+
+ 
+*** Message Type: info ***
+When: Tue Dec 13 22:14:49 -03 2022
+SimVision Exit.
+ 

@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/steel_etapa_4e5.dat riscv_steel_core

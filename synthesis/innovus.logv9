@@ -1,0 +1,49 @@
+[01/31 13:48:34     0s] 
+[01/31 13:48:34     0s] Cadence Innovus(TM) Implementation System.
+[01/31 13:48:34     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/31 13:48:34     0s] 
+[01/31 13:48:34     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[01/31 13:48:34     0s] Options:	-common_ui 
+[01/31 13:48:34     0s] Date:		Tue Jan 31 13:48:34 2023
+[01/31 13:48:34     0s] Host:		pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+[01/31 13:48:34     0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/31 13:48:34     0s] 
+[01/31 13:48:34     0s] License:
+[01/31 13:48:34     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[01/31 13:48:34     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/31 13:48:51    12s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[01/31 13:48:51    12s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[01/31 13:48:51    12s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[01/31 13:48:51    12s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[01/31 13:48:51    12s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[01/31 13:48:51    12s] @(#)CDS: CPE v15.20-p002
+[01/31 13:48:51    12s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[01/31 13:48:51    12s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[01/31 13:48:51    12s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[01/31 13:48:51    12s] @(#)CDS: RCDB 11.6
+[01/31 13:48:51    12s] --- Running on pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB) ---
+[01/31 13:48:51    12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_6322_pgmicro01_enrico.pizzol_hnciHz.
+
+[01/31 13:48:51    12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_6322_pgmicro01_enrico.pizzol_hnciHz.
+[01/31 13:48:51    12s] 
+[01/31 13:48:52    13s] 
+[01/31 13:48:52    13s] **INFO:  MMMC transition support version v31-84 
+[01/31 13:48:52    13s] 
+[01/31 13:48:54    14s] Loading fill procedures ...
+[01/31 13:49:19    16s] [DEV]innovus 1> eval_legacy {loadDesign etapa2_larger}
+[01/31 13:49:45    20s] invalid command name "loadDesign"
+[DEV]innovus 2> eval_legacy {loadDesign etapa2_larger}
+[01/31 13:54:24    61s] invalid command name "loadDesign"
+[DEV]innovus 3> eval_legacy {restoreDesign etapa2_larger}
+**ERROR: (IMPTCM-113):	Option "design" is required when option "session" is specified in command "restoreDesign".
+[01/31 13:55:28    68s] 
+[01/31 13:55:28    68s] 
+[01/31 13:55:28    68s] ERROR:   
+[01/31 13:55:28    68s] 
+[01/31 13:55:28    68s]   
+[01/31 13:55:28    68s]     while executing
+[01/31 13:55:28    68s] "error $catchMsg"
+[01/31 13:55:28    68s]     (procedure "restoreDesign" line 24)
+[01/31 13:55:28    68s] 
+[01/31 13:55:28    68s]   
+[01/31 13:55:28    68s] [DEV]innovus 4> [

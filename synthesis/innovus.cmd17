@@ -1,0 +1,216 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Feb  7 14:45:48 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+#@(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+#@(#)CDS: CPE v15.20-p002
+#@(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+
+eval_legacy {source steel_etapa_4e5}
+set_layer_preference instanceCell -is_visible 0
+set_layer_preference inst -is_visible 0
+set_layer_preference block -is_visible 0
+set_layer_preference stdCell -is_visible 0
+set_layer_preference coverCell -is_visible 0
+set_layer_preference phyCell -is_visible 0
+set_layer_preference io -is_visible 0
+set_layer_preference areaIo -is_visible 0
+set_layer_preference blackBox -is_visible 0
+set_layer_preference inst -is_visible 0
+set_layer_preference block -is_visible 0
+set_layer_preference stdCell -is_visible 0
+set_layer_preference coverCell -is_visible 0
+set_layer_preference phyCell -is_visible 0
+set_layer_preference io -is_visible 0
+set_layer_preference areaIo -is_visible 0
+set_layer_preference blackBox -is_visible 0
+set_layer_preference flop -is_visible 0
+set_layer_preference pwrswt -is_visible 0
+set_layer_preference isolation -is_visible 0
+set_layer_preference shift -is_visible 0
+set_layer_preference funcother -is_visible 0
+set_layer_preference place -is_visible 0
+set_layer_preference fixed -is_visible 0
+set_layer_preference cover -is_visible 0
+set_layer_preference softfix -is_visible 0
+set_layer_preference unplace -is_visible 0
+gui_pan_page -1 0
+gui_pan_page -1 0
+gui_pan_page -1 0
+set_db check_implant 1
+set_db check_drc_implant_across_rows 0
+set_db check_drc_ndr_spacing 0
+set_db check_drc_inside_via_def 0
+set_db check_drc_exclude_pg_net 0
+set_db check_drc_ignore_trial_route 0
+set_db check_drc_report riscv_steel_core.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db route_strict_honor_non_default_rule false
+set_db route_strict_honor_non_default_rule false
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+eval_legacy { selectMarker 5.0400 537.0100 549.9900 537.8100 1 1 6 }
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 -1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1

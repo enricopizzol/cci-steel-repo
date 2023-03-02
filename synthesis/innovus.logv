@@ -1,0 +1,38 @@
+[12/20 14:35:35     0s] 
+[12/20 14:35:35     0s] Cadence Innovus(TM) Implementation System.
+[12/20 14:35:35     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/20 14:35:35     0s] 
+[12/20 14:35:35     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[12/20 14:35:35     0s] Options:	-common_ui 
+[12/20 14:35:35     0s] Date:		Tue Dec 20 14:35:35 2022
+[12/20 14:35:35     0s] Host:		pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+[12/20 14:35:35     0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[12/20 14:35:35     0s] 
+[12/20 14:35:35     0s] License:
+[12/20 14:35:35     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[12/20 14:35:35     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/20 14:35:51    11s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[12/20 14:35:51    11s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[12/20 14:35:51    11s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[12/20 14:35:51    11s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[12/20 14:35:51    11s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[12/20 14:35:51    11s] @(#)CDS: CPE v15.20-p002
+[12/20 14:35:51    11s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[12/20 14:35:51    11s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[12/20 14:35:51    11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[12/20 14:35:51    11s] @(#)CDS: RCDB 11.6
+[12/20 14:35:51    11s] --- Running on pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB) ---
+[12/20 14:35:51    11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_655_pgmicro01_enrico.pizzol_fgYM4N.
+
+[12/20 14:35:51    11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_655_pgmicro01_enrico.pizzol_fgYM4N.
+[12/20 14:35:51    11s] 
+[12/20 14:35:52    12s] 
+[12/20 14:35:52    12s] **INFO:  MMMC transition support version v31-84 
+[12/20 14:35:52    12s] 
+[12/20 14:35:53    13s] Loading fill procedures ...
+[12/20 14:36:06    14s] [DEV]innovus 1> exit
+
+[12/20 14:39:57    47s] *** Memory Usage v#1 (Current mem = 456.504M, initial mem = 170.848M) ***
+[12/20 14:39:57    47s] *** Message Summary: 0 warning(s), 0 error(s)
+[12/20 14:39:57    47s] 
+[12/20 14:39:57    47s] --- Ending "Innovus" (totcpu=0:00:46.8, real=0:04:22, mem=456.5M) ---

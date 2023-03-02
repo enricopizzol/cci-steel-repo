@@ -1,0 +1,47 @@
+[01/26 14:27:36     0s] 
+[01/26 14:27:36     0s] Cadence Innovus(TM) Implementation System.
+[01/26 14:27:36     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[01/26 14:27:36     0s] 
+[01/26 14:27:36     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[01/26 14:27:36     0s] Options:	
+[01/26 14:27:36     0s] Date:		Thu Jan 26 14:27:36 2023
+[01/26 14:27:36     0s] Host:		pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+[01/26 14:27:36     0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[01/26 14:27:36     0s] 
+[01/26 14:27:36     0s] License:
+[01/26 14:27:36     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[01/26 14:27:36     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[01/26 14:27:50    12s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[01/26 14:27:50    12s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[01/26 14:27:50    12s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[01/26 14:27:50    12s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[01/26 14:27:50    12s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[01/26 14:27:50    12s] @(#)CDS: CPE v15.20-p002
+[01/26 14:27:50    12s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[01/26 14:27:50    12s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[01/26 14:27:50    12s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[01/26 14:27:50    12s] @(#)CDS: RCDB 11.6
+[01/26 14:27:50    12s] --- Running on pgmicro01 (x86_64 w/Linux 3.10.0-1160.6.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB) ---
+[01/26 14:27:50    12s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_12200_pgmicro01_enrico.pizzol_56rXBr.
+
+[01/26 14:27:51    12s] 
+[01/26 14:27:51    12s] **INFO:  MMMC transition support version v31-84 
+[01/26 14:27:51    12s] 
+[01/26 14:27:51    12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[01/26 14:27:51    12s] <CMD> suppressMessage ENCEXT-2799
+[01/26 14:27:51    13s] <CMD> getVersion
+[01/26 14:27:51    13s] Loading fill procedures ...
+[01/26 14:27:52    13s] <CMD> getDrawView
+[01/26 14:27:52    13s] <CMD> loadWorkspace -name Physical
+[01/26 14:27:52    13s] <CMD> win
+[01/26 14:29:11    24s] **ERROR: (IMPDBTCL-247):	'init_power_nets' is not a recognized object/attribute. Type 'help root:' to get a list of all supported objects and attributes.
+[01/26 14:29:11    24s] 
+[01/26 14:29:18    25s] 
+[01/26 14:29:18    25s] *** Memory Usage v#1 (Current mem = 441.602M, initial mem = 162.844M) ***
+[01/26 14:29:18    25s] 
+[01/26 14:29:18    25s] *** Summary of all messages that are not suppressed in this session:
+[01/26 14:29:18    25s] Severity  ID               Count  Summary                                  
+[01/26 14:29:18    25s] ERROR     IMPDBTCL-247         1  '%s' is not a recognized object/attribut...
+[01/26 14:29:18    25s] *** Message Summary: 0 warning(s), 1 error(s)
+[01/26 14:29:18    25s] 
+[01/26 14:29:18    25s] --- Ending "Innovus" (totcpu=0:00:25.2, real=0:01:42, mem=441.6M) ---

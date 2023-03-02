@@ -1,0 +1,1 @@
+/home/inf01185/enrico.pizzol/cci-2/steel/synthesis/innovus/riscv_steel_core.v.default_emulate_constraint_mode.sdc

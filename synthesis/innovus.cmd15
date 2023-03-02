@@ -1,0 +1,157 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Feb  7 14:18:52 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+#@(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+#@(#)CDS: CPE v15.20-p002
+#@(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+
+eval_legacy {source steel_etapa_4e5}
+eval_legacy {source physical/5_fillers_reports.tcl}
+add_fillers -base_cells FEED1 FEED2 FEED3 FEED5 FEED7 FEED10 FEED15 FEED25 -prefix FILLER
+report_summary -out_dir summaryReport
+time_design -post_route
+eval_legacy {verifyGeometry -noOverlap}
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+set_db check_implant 1
+set_db check_drc_implant_across_rows 0
+set_db check_drc_ndr_spacing 0
+set_db check_drc_inside_via_def 0
+set_db check_drc_exclude_pg_net 0
+set_db check_drc_ignore_trial_route 0
+set_db check_drc_report riscv_steel_core.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db route_strict_honor_non_default_rule false
+set_db route_strict_honor_non_default_rule false
+set_db check_implant 1
+set_db check_drc_implant_across_rows 0
+set_db check_drc_ndr_spacing 0
+set_db check_drc_inside_via_def 0
+set_db check_drc_exclude_pg_net 0
+set_db check_drc_ignore_trial_route 0
+set_db check_drc_report riscv_steel_core.drc.rpt
+set_db check_drc_limit 1000
+check_drc
+set_db route_strict_honor_non_default_rule false
+set_db route_strict_honor_non_default_rule false
+gui_window_select 402.085 312.422 516.203 474.088
+gui_fit
+gui_fit
+deselect_all
+gui_set_tool ruler
+set_layer_preference instanceCell -is_visible 0
+set_layer_preference inst -is_visible 0
+set_layer_preference block -is_visible 0
+set_layer_preference stdCell -is_visible 0
+set_layer_preference coverCell -is_visible 0
+set_layer_preference phyCell -is_visible 0
+set_layer_preference io -is_visible 0
+set_layer_preference areaIo -is_visible 0
+set_layer_preference blackBox -is_visible 0
+gui_set_tool ruler
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 1 0
+gui_pan_page 0 -1
+gui_set_tool ruler
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 -1
+gui_set_tool ruler
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page 0 1
+gui_pan_page -1 0
+gui_pan_page -1 0
+gui_pan_page 0 1
+gui_fit
+gui_pan_page 0 1
+gui_set_tool stretchWire
+gui_set_tool stretchWire
+gui_set_tool stretchWire
+gui_set_tool ruler

@@ -1,0 +1,29 @@
+
+::db::check_and_set_root_attr check_drc_exclude_pg_net {false}
+::db::check_and_set_root_attr check_drc_ignore_trial_route {false}
+::db::check_and_set_root_attr check_drc_implant_across_rows {false}
+::db::check_and_set_root_attr check_drc_inside_via_def {false}
+::db::check_and_set_root_attr check_drc_limit {1000}
+::db::check_and_set_root_attr check_drc_ndr_spacing {false}
+::db::check_and_set_root_attr check_drc_report [list ${::IMEX::libVar}/misc/riscv_steel_core.drc.rpt]
+::db::check_and_set_root_attr check_implant {true}
+::db::check_and_set_root_attr delaycal_enable_high_fanout {true}
+::db::check_and_set_root_attr delaycal_enable_si {true}
+::db::check_and_set_root_attr delaycal_ignore_net_load {false}
+::db::check_and_set_root_attr extract_rc_coupled {true}
+::db::check_and_set_root_attr extract_rc_engine {post_route}
+::db::check_and_set_root_attr opt_all_end_points {false}
+::db::check_and_set_root_attr opt_delete_insts {true}
+::db::check_and_set_root_attr opt_drv_margin {0.0}
+::db::check_and_set_root_attr opt_effort {high}
+::db::check_and_set_root_attr opt_hier_trial_route_honor_read_only {false}
+::db::check_and_set_root_attr opt_preserve_all_sequential {false}
+::db::check_and_set_root_attr opt_setup_target_slack {0.0}
+::db::check_and_set_root_attr opt_useful_skew_eco_route {false}
+::db::check_and_set_root_attr route_concurrent_minimize_via_count_effort {medium}
+::db::check_and_set_root_attr route_detail_end_iteration {0}
+::db::check_and_set_root_attr route_detail_post_route_spread_wire {false}
+::db::check_and_set_root_attr route_reserve_space_for_multi_cut {false}
+::db::check_and_set_root_attr route_strict_honor_non_default_rule {false}
+::db::check_and_set_root_attr route_with_si_driven {false}
+::db::check_and_set_root_attr route_with_timing_driven {false}

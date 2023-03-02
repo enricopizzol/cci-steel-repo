@@ -1,0 +1,140 @@
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set cursorctl-dont-show-sync-warning 1
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+
+#
+# Mnemonic Maps
+#
+mmap new -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 730x500+261+33}] != ""} {
+    window geometry "Design Browser 1" 730x500+261+33
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope  simulator::tb_riscv_steel_core 
+browser set \
+    -signalsort name
+browser yview see  simulator::tb_riscv_steel_core 
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1024x665+-10+20}] != ""} {
+    window geometry "Waveform 1" 1024x665+-10+20
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.z
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.test_error_flag
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.riscv_test_program_goldenref[280:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.riscv_test_program[240:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.reset
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.ram[0:16383]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.n
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.m
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.k
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.j
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.instruction_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.instruction_address[31:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.i
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.data_write_request
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.data_write_mask[3:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.data_rw_address[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.data_out[31:0]}
+	} ]
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.data_in[31:0]}
+	} ]
+set id [waveform add -signals  {
+	simulator::tb_riscv_steel_core.current_test_goldenref_match
+	} ]
+waveform hierarchy collapse $id
+set id [waveform add -signals  {
+	{simulator::tb_riscv_steel_core.current_test_goldenref[0:2047]}
+	} ]
+
+waveform xview limits 64247632ps 64440000ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x313+130+288
+
+#
+# Layout selection
+#
