@@ -1,0 +1,27 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Mar  7 12:23:54 2023                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+#@(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+#@(#)CDS: CPE v15.20-p002
+#@(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+
+set_db init_power_nets {VDD vdd vdd!}
+set_db init_ground_nets {VSS GND gnd gnd!}
+read_mmmc innovus/riscv_steel_core.v.mmmc.tcl
+read_physical -lef {/pdk/xfab/XC018_61_3.1.3/cadence/xc018/LEF/xc018_m6_FE/xc018m6_FE.lef /pdk/xfab/XC018_61_3.1.3/cadence/xc018/LEF/xc018_m6_FE/D_CELLS.lef /pdk/xfab/XC018_61_3.1.3/cadence/xc018/LEF/xc018_m6_FE/IO_CELLS_5V.lef}
+read_netlist innovus/riscv_steel_core.v.v
+init_design
+create_floorplan -site core -core_density_size 1 0.60 13 13 13 13
+gui_fit
+eval_legacy { addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -type core_rings -jog_distance 0.315 -threshold 0.315 -nets {vdd gnd} -follow core -stacked_via_bottom_layer MET1 -layer {bottom MET3 top MET3 right MET4 left MET4} -width 0.44 -spacing 0.46 -offset 0.315 }
+source /tools/cadence/rhel5/INNOVUS_15.20/share/tcltools/icd8.6.4/lib/tcl8.6/history.tcl
+route_special -connect { blockpin padpin padring corepin floatingstripe } -layer_change_range { MET1 METTP } -block_pin_target { nearesttarget } -pad_pin_port_connect { allport onegeom } -pad_pin_target { nearesttarget } -core_pin_target { firstafterrowend } -floating_stripe_target { blockring padring ring stripe ringpin blockpin followpin } -allow_jogging 1 -crossover_via_layer_range { MET1 METTP } -nets { gnd vdd } -allow_layer_change 1 -block_pin use_lef -target_via_layer_range { MET1 METTP }
+eval_legacy { addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit MET4 -max_same_layer_jog_length 0.88 -padcore_ring_bottom_layer_limit MET2 -set_to_set_distance 100 -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -padcore_ring_top_layer_limit MET4 -spacing 0.46 -merge_stripes_value 0.315 -layer MET3 -block_ring_bottom_layer_limit MET2 -width 0.44 -stacked_via_bottom_layer MET1 }
