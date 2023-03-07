@@ -20,7 +20,7 @@ connect_global_net gnd -type pg_pin -pin_base_name gnd! -inst_base_name *
 eval_legacy { addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -type core_rings -jog_distance 0.315 -threshold 0.315 -nets {vdd gnd} -follow core -stacked_via_bottom_layer MET1 -layer {bottom MET3 top MET3 right MET4 left MET4} -width 0.44 -spacing 0.46 -offset 0.315 }
 
 ##Route power rails using M1
-route_special -connect { blockpin padpin padring corepin floatingstripe } -layer_change_range { MET1 METTP } -block_pin_target { nearesttarget } -pad_pin_port_connect { allport onegeom } -pad_pin_target { nearesttarget } -core_pin_target { firstafterrowend } -floating_stripe_target { blockring padring ring stripe ringpin blockpin followpin } -allow_jogging 1 -crossover_via_layer_range { MET1 METTP } -nets { gnd vdd } -allow_layer_change 1 -block_pin use_lef -target_via_layer_range { MET1 METTP }
+route_special -connect {block_pin core_pin pad_pin pad_ring floating_stripe} -layer_change_range {M1 METTP} -block_pin_target {nearest_target} -pad_pin_port_connect {all_port one_geom} -block_pin {use_lef} -allow_jogging 1  -crossover_via_layer_range {M1 METTP} -allow_layer_change 1 -target_via_layer_range {M1 METTP} -nets {gnd vdd}
 ##Add well taps
 add_well_taps -cell FEED1 -cell_interval 20 -fixed_gap -prefix WELLTAP -in_row_offset 8.0
 
