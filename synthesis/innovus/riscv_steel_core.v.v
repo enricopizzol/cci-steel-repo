@@ -5,17 +5,37 @@
 // Verification Directory fv/riscv_steel_core 
 module iopads(clock,reset,boot_address,instruction_address, instruction_in,data_rw_address,data_out,data_write_request,data_write_mask,data_in,interrupt_request_external,interrupt_request_timer,interrupt_request_software,clock_I,reset_I,boot_address_I,instruction_address_I,  instruction_in_I,data_rw_address_I,data_out_I,data_write_request_I,data_write_mask_I,data_in_I,interrupt_request_external_I,interrupt_request_timer_I,interrupt_request_software_I,
 );
-	input Bus2IP_Clk, Bus2IP_Reset;
-	input [7:0] Bus2IP_Data;
-	input [0:14] Bus2IP_RdCE, Bus2IP_WrCE;
-	output [7:0] IP2Bus_Data;
-	output user_int;
 
-	output Bus2IP_Clk_I, Bus2IP_Reset_I;
-	output [7:0] Bus2IP_Data_I;
-	output [0:14] Bus2IP_RdCE_I, Bus2IP_WrCE_I;
-	input [7:0] IP2Bus_Data_O;
-	input user_int_O;
+	  // Basic system signals
+	  input  wire           clock,
+	  input  wire           reset,
+	  input  wire   [31:0]  boot_address,
+	  output wire   [31:0]  instruction_address,
+	  input  wire   [31:0]  instruction_in,
+	  output wire   [31:0]  data_rw_address,
+	  output wire   [31:0]  data_out,
+	  output wire           data_write_request,
+	  output wire   [3:0 ]  data_write_mask,
+	  input  wire   [31:0]  data_in,
+	  input  wire           interrupt_request_external,
+	  input  wire           interrupt_request_timer,
+	  input  wire           interrupt_request_software,  
+	
+	// _I SIGNALS
+	  output wire           clock,
+	  output wire           reset,
+	  output wire   [31:0]  boot_address,
+	  input  wire   [31:0]  instruction_address,
+	  output wire   [31:0]  instruction_in,
+	  input wire   [31:0]  data_rw_address,
+	  input wire   [31:0]  data_out,
+	  input wire           data_write_request,
+	  input wire   [3:0 ]  data_write_mask,
+	  output wire   [31:0]  data_in,
+	  output wire           interrupt_request_external,
+	  output wire           interrupt_request_timer,
+	  output wire           interrupt_request_software,  
+
 
 	ICP PAD_bus2ip_clk_i(.PAD(Bus2IP_Clk), .Y(Bus2IP_Clk_I));
 	ICP PAD_bus2ip_reset_i(.PAD(Bus2IP_Reset), .Y(Bus2IP_Reset_I));
