@@ -3,7 +3,8 @@
 // Generated on: Dec 20 2022 14:15:41
 
 // Verification Directory fv/riscv_steel_core 
-module iopads(clock,reset,boot_address,instruction_address, instruction_in,data_rw_address,data_out,data_write_request,data_write_mask,data_in,interrupt_request_external,interrupt_request_timer,interrupt_request_software);
+module iopads(clock,reset,boot_address,instruction_address, instruction_in,data_rw_address,data_out,data_write_request,data_write_mask,data_in,interrupt_request_external,interrupt_request_timer,interrupt_request_software,clock_I,reset_I,boot_address_I,instruction_address_I,  instruction_in_I,data_rw_address_I,data_out_I,data_write_request_I,data_write_mask_I,data_in_I,interrupt_request_external_I,interrupt_request_timer_I,interrupt_request_software_I,
+);
 	input Bus2IP_Clk, Bus2IP_Reset;
 	input [7:0] Bus2IP_Data;
 	input [0:14] Bus2IP_RdCE, Bus2IP_WrCE;
