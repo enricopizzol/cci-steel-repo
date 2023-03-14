@@ -22,19 +22,19 @@ module iopads(clock,reset,boot_address,instruction_address, instruction_in,data_
 	  input  wire           interrupt_request_software,  
 	
 	// _I SIGNALS
-	  output wire           clock,
-	  output wire           reset,
-	  output wire   [31:0]  boot_address,
-	  input  wire   [31:0]  instruction_address,
-	  output wire   [31:0]  instruction_in,
-	  input wire   [31:0]  data_rw_address,
-	  input wire   [31:0]  data_out,
-	  input wire           data_write_request,
-	  input wire   [3:0 ]  data_write_mask,
-	  output wire   [31:0]  data_in,
-	  output wire           interrupt_request_external,
-	  output wire           interrupt_request_timer,
-	  output wire           interrupt_request_software,  
+	  output wire           clock_I,
+	  output wire           reset_I,
+	output wire   [31:0]  boot_address_I,
+	input  wire   [31:0]  instruction_address_I,
+	output wire   [31:0]  instruction_in_I,
+	input wire   [31:0]  data_rw_address_I,
+	input wire   [31:0]  data_out_I,
+	  input wire           data_write_request_I,
+	input wire   [3:0 ]  data_write_mask_I,
+	output wire   [31:0]  data_in_I,
+	  output wire           interrupt_request_external_I,
+	  output wire           interrupt_request_timer_I,
+	  output wire           interrupt_request_software_I,  
 
 
 	ICP PAD_bus2ip_clk_i(.PAD(Bus2IP_Clk), .Y(Bus2IP_Clk_I));
