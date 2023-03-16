@@ -4,6 +4,9 @@ CSV_FILENAME = "pads.csv"
 INPUT = "input"
 OUTPUT = "output"
 SIZE = 3
+ORIENTATION =4;
+TYPE = 5;
+
 
 
 def generate_pads():
@@ -30,14 +33,14 @@ def generate_pads():
             signals_file_output.write("{pin},{pin_I},\n".format(pin=_input[0], pin_I=_input[1]))
             if 1 == int(_input[SIZE]):
                 # signals_file_output.write("output {pin},{pin_I};\n".format(pin=_input[0], pin_I=_input[1]))
-                file.write("BD8P PAD_{pin}_o(.A({pin}),.PAD({pin_I}));\n".format(pin=_input[1], pin_I=_input[0])
+                file.write("BD8P PAD_{pin}_o(.A({pin_I}),.PAD({pin}));\n".format(pin=_input[0], pin_I=_input[1])
                            )
             if int(_input[SIZE]) > 1:
                 for x in range(0, int(_input[SIZE])):
                     # signals_file_output.write(
                     #     "output {pin}{index},{pin_I}{index};\n".format(pin=_input[0], pin_I=_input[1], index=x))
-                    file.write("BD8P PAD_{pin}{index}_o(.A({pin}[{index}]),.PAD({pin_I}[{index}]));\n".format(pin=_input[1],
-                                                                                                       pin_I=_input[0],
+                    file.write("BD8P PAD_{pin}{index}_o(.A({pin_I}[{index}]),.PAD({pin}[{index}]));\n".format(pin=_input[0],
+                                                                                                       pin_I=_input[1],
                                                                                                        index=x))
 
     file.close()
@@ -54,23 +57,22 @@ def generate_iopads():
     for _input in inputs:
         if _input[2] == INPUT:
             if 1 == int(_input[SIZE]):
-                file.write("Pad: IOPADS_INST/PAD_bus2ip_wrce_i_2 N ICP;\n".format(pin=_input[0], pin_I=_input[1]))
+                file.write("Pad: IOPADS_INST/PAD_{pin} {orientation} {type}\n".format(pin=_input[0], pin_I=_input[1]), orientation= _input[4], type=_input[5])
             if int(_input[SIZE]) > 1:
                 for x in range(0, int(_input[SIZE])):
-                    file.write("ICP PAD_{pin}_i(.PAD({pin}[{index}]),.Y({pin_I}[{index}]));\n".format(pin=_input[0], pin_I=_input[1],index=x))
+                file.write("Pad: IOPADS_INST/PAD_{pin} {orientation} {type}\n".format(pin=_input[0], pin_I=_input[1]), orientation= _input[4], type=_input[5])
+                
+               
         if _input[2] == OUTPUT:
             if 1 == int(_input[SIZE]):
-                file.write("BD8P PAD_{pin}_o(.A({pin}),.PAD({pin_I}));\n".format(pin=_input[1], pin_I=_input[0])
-                           )
+                file.write("Pad: IOPADS_INST/PAD_{pin}_o {orientation} {type}\n".format(pin=_input[0], pin_I=_input[1]), orientation= _input[4], type=_input[5])
+                          )
             if int(_input[SIZE]) > 1:
                 for x in range(0, int(_input[SIZE])):
                     # signals_file_output.write(
-                    file.write(
-                        "BD8P PAD_{pin}_o(.A({pin}[{index}]),.PAD({pin_I}[{index}]));\n".format(pin=_input[1],
-                                                                                                pin_I=_input[0],
-                                                                                                index=x))
-
+                    file.write("Pad: IOPADS_INST/PAD_{pin}{index}_o {orientation} {type}\n".format(pin=_input[0], pin_I=_input[1]), orientation= _input[4], type=_input[5], index=x)
+                
 
 if __name__ == '__main__':
-    generate_pads()
-    # generate_iopads()
+    #generate_pads()
+    generate_iopads()
