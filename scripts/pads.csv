@@ -1,13 +1,13 @@
-clock,clock_I,"input",1
-reset,reset_I,"input",1
-boot_address,boot_address_I,"input",32
-instruction_address,instruction_address_O,"output",32
-instruction_in,instruction_in_I,"input",32
-data_rw_address,data_rw_address_O,"output",32
-data_out,data_out_O,"output",32
-data_write_request,data_write_request_O,"output",1
-data_write_mask,data_write_mask_O,"output",4
-data_in, data_in_I,"input",32
-interrupt_request_external,interrupt_request_external_I,"input",1
-interrupt_request_timer,interrupt_request_timer_I,"input",1
-interrupt_request_software,interrupt_request_software_I,"input",1
+clock,clock_I,"input",1,S,type
+reset,reset_I,"input",1,S,type
+boot_address,boot_address_I,"input",32,N,type
+instruction_address,instruction_address_O,"output",32,S,type
+instruction_in,instruction_in_I,"input",32,W,type
+data_rw_address,data_rw_address_O,"output",32,E,type
+data_out,data_out_O,"output",32,E,type
+data_write_request,data_write_request_O,"output",1,W,type
+data_write_mask,data_write_mask_O,"output",4,N,type
+data_in, data_in_I,"input",32,W,type
+interrupt_request_external,interrupt_request_external_I,"input",1,N,type
+interrupt_request_timer,interrupt_request_timer_I,"input",1,N,type
+interrupt_request_software,interrupt_request_software_I,"input",1,N,type
