@@ -336,7 +336,7 @@ real_time);
      .interrupt_request_external(interrupt_request_external), 
      .interrupt_request_timer(interrupt_request_timer),
      .interrupt_request_software(interrupt_request_software),
-     .real_time(real_time); 
+     .real_time(real_time) 
 	);
 
 
@@ -367,7 +367,7 @@ real_time);
           .data_write_request_O(data_write_request_O),
           .data_write_mask(data_write_mask),
           .data_write_mask_O(data_out_O),
-          .real_time(real_time);
+          .real_time(real_time)
           );
 endmodule
 
