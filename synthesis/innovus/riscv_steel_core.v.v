@@ -333,7 +333,8 @@ data_write_mask,data_write_mask_O);
      .interrupt_request_external(interrupt_request_external), 
      .interrupt_request_timer(interrupt_request_timer),
      .interrupt_request_software(interrupt_request_software)
-     );
+	);
+
 
      iopads IOPADS_INST(
           .clock(clock),
