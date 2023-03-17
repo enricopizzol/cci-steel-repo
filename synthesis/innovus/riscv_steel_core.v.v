@@ -17,7 +17,7 @@ instruction_address,instruction_address_O,
 data_rw_address,data_rw_address_O,
 data_out,data_out_O,
 data_write_request,data_write_request_O,
-data_write_mask,data_write_mask_O,
+data_write_mask,data_write_mask_O
 );
 
 	input            clock;
@@ -365,7 +365,7 @@ real_time);
           .data_write_request(data_write_request),
           .data_write_request_O(data_write_request_O),
           .data_write_mask(data_write_mask),
-          .data_write_mask_O(data_out_O),
+          .data_write_mask_O(data_out_O)
           );
 endmodule
 
