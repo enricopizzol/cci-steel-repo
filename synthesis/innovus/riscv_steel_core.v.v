@@ -364,12 +364,9 @@ data_write_mask,data_write_mask_O);
           .data_write_mask(data_write_mask),
           .data_write_mask_O(data_out_O)
           );
-
 endmodule
 
 
-
-endmodule
 module lt_unsigned(A, B, Z);
   input [31:0] A, B;
   output Z;
