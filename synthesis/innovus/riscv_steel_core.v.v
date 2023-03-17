@@ -3,6 +3,28 @@
 // Generated on: Dec 20 2022 14:15:41
 
 // Verification Directory fv/riscv_steel_core 
+module top (
+clock,clock_I,
+reset,reset_I,
+boot_address,boot_address_I,
+instruction_in,instruction_in_I,
+data_in, data_in_I,
+interrupt_request_external,interrupt_request_external_I,
+interrupt_request_timer,interrupt_request_timer_I,
+interrupt_request_software,interrupt_request_software_I,
+instruction_address,instruction_address_O,
+data_rw_address,data_rw_address_O,
+data_out,data_out_O,
+data_write_request,data_write_request_O,
+data_write_mask,data_write_mask_O);
+
+
+
+
+
+endmodule
+
+
 module iopads(
 clock,clock_I,
 reset,reset_I,
@@ -273,57 +295,69 @@ ICP PAD_interrupt_request_software_i(.PAD(interrupt_request_software),.Y(interru
 	
 endmodule
 
-module top(Bus2IP_Clk, Bus2IP_Reset, Bus2IP_Data, Bus2IP_RdCE, Bus2IP_WrCE, IP2Bus_Data, user_int);
-	input Bus2IP_Clk, Bus2IP_Reset;
-	input [7:0] Bus2IP_Data;
-	input [0:14] Bus2IP_RdCE, Bus2IP_WrCE;
-	output [7:0] IP2Bus_Data;
-	output user_int;
+module top (
+clock,clock_I,
+reset,reset_I,
+boot_address,boot_address_I,
+instruction_in,instruction_in_I,
+data_in, data_in_I,
+interrupt_request_external,interrupt_request_external_I,
+interrupt_request_timer,interrupt_request_timer_I,
+interrupt_request_software,interrupt_request_software_I,
+instruction_address,instruction_address_O,
+data_rw_address,data_rw_address_O,
+data_out,data_out_O,
+data_write_request,data_write_request_O,
+data_write_mask,data_write_mask_O);
 
-	wire Bus2IP_Clk_I, Bus2IP_Reset_I;
-	wire [7:0] Bus2IP_Data_I;
-	wire [0:14] Bus2IP_RdCE_I, Bus2IP_WrCE_I;
-	wire [7:0] IP2Bus_Data_O;
-	wire user_int_O;
-
-	busca_padrao top_INST(
-		.Bus2IP_Clk(Bus2IP_Clk_I),
-		.Bus2IP_Reset(Bus2IP_Reset_I),
-		.Bus2IP_Data(Bus2IP_Data_I),
-		.Bus2IP_RdCE(Bus2IP_RdCE_I),
-		.Bus2IP_WrCE(Bus2IP_WrCE_I),
-		.IP2Bus_Data(IP2Bus_Data_O),
-		.user_int(user_int_O)
+	riscv_steel_core RISCV_INST(
+     .clock(clock), 
+     .reset(reset), 
+     .boot_address(boot_address),
+     .instruction_address(instruction_address), 
+     .instruction_in(instruction_in), 
+     .data_rw_address(data_rw_address), 
+     .data_out(data_out),
+     .data_write_request(data_write_request), 
+     .data_write_mask(data_write_mask), 
+     .data_in(data_in),
+     .interrupt_request_external(interrupt_request_external), 
+     .interrupt_request_timer(interrupt_request_timer),
+     .interrupt_request_software(interrupt_request_software),
 	);
 
 	
      iopads IOPADS_INST(
-          .pin(clock),
-          .pin_I(clock_I),
-          .pin(reset),
-          .pin_I(reset_I),
-          .pin(boot_address),
-          .pin_I(boot_address_I),
-          .pin(instruction_address),
-          .pin_I(instruction_address_O),
-          .pin(instruction_in),
-          .pin_I(instruction_in_I),
-          .pin(data_rw_address),
-          .pin_I(data_rw_address_O),
-          .pin(data_out),
-          .pin_I(data_out_O),
-          .pin(data_write_request),
-          .pin_I(data_write_request_O),
-          .pin(data_write_mask),
-          .pin_I(data_write_mask_O),
-          .pin(data_in),
-          .pin_I( data_in_I),
-          .pin(interrupt_request_external),
-          .pin_I(interrupt_request_external_I),
-          .pin(interrupt_request_timer),
-          .pin_I(interrupt_request_timer_I),
-          .pin(interrupt_request_software),
-          .pin_I(interrupt_request_software_I));
+          .clock(clock),
+          .clock_I(clock_I),
+          .reset(reset),
+          .reset_I(reset_I),
+          .boot_address(boot_address),
+          .boot_address_I(boot_address_I),
+          .instruction_in(instruction_in),
+          .instruction_in_I(instruction_in_I),
+          .data_in(data_in), 
+          .data_in_I(data_in_I),
+          .interrupt_request_external(interrupt_request_external),
+          .interrupt_request_external_I(interrupt_request_external_I),
+          .interrupt_request_timer(interrupt_request_timer),
+          .interrupt_request_timer_I(interrupt_request_timer_I),
+          .interrupt_request_software(interrupt_request_software),
+          .interrupt_request_software_I(interrupt_request_software_I),
+          .instruction_address(instruction_address),
+          .instruction_address_O(instruction_address_O),
+          .data_rw_address(data_rw_address),
+          .data_rw_address_O(data_rw_address_O),
+          .data_out(data_out),
+          .data_out_O(data_out_O),
+          .data_write_request(data_write_request),
+          .data_write_request_O(data_write_request_O),
+          .data_write_mask(data_write_mask),
+          .data_write_mask_O(data_out_O)
+          );
+
+endmodule
+
 
 
 endmodule
