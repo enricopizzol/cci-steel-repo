@@ -19,7 +19,6 @@ data_out,data_out_O,
 data_write_request,data_write_request_O,
 data_write_mask,data_write_mask_O);
 
-	  // Basic system signals
 	input            clock;
 	input            reset;
 	input    [31:0]  boot_address;
@@ -38,12 +37,12 @@ data_write_mask,data_write_mask_O);
 	output         clock_I;
 	output         reset_I;
 	output [31:0]  boot_address_I;
-	input  [31:0]  instruction_address_I;
+	input  [31:0]  instruction_address_O;
 	output [31:0]  instruction_in_I;
-	input  [31:0]  data_rw_address_I;
-	input  [31:0]  data_out_I;
-	input          data_write_request_I;
-	input  [3:0 ]  data_write_mask_I;
+	input  [31:0]  data_rw_address_O;
+	input  [31:0]  data_out_O;
+	input          data_write_request_O;
+	input  [3:0 ]  data_write_mask_O;
 	output [31:0]  data_in_I;
 	output         interrupt_request_external_I;
 	output         interrupt_request_timer_I;
@@ -308,12 +307,12 @@ data_write_mask,data_write_mask_O);
 	output         clock_I;
 	output         reset_I;
 	output [31:0]  boot_address_I;
-	input  [31:0]  instruction_address_I;
+	input  [31:0]  instruction_address_O;
 	output [31:0]  instruction_in_I;
-	input  [31:0]  data_rw_address_I;
-	input  [31:0]  data_out_I;
-	input          data_write_request_I;
-	input  [3:0 ]  data_write_mask_I;
+	input  [31:0]  data_rw_address_O;
+	input  [31:0]  data_out_O;
+	input          data_write_request_O;
+	input  [3:0 ]  data_write_mask_O;
 	output [31:0]  data_in_I;
 	output         interrupt_request_external_I;
 	output         interrupt_request_timer_I;
