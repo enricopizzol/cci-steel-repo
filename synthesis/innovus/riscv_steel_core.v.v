@@ -19,19 +19,19 @@ data_write_request,data_write_request_O,
 data_write_mask,data_write_mask_O);
 
 	  // Basic system signals
-	  input            clock,
-	  input            reset,
-	  input    [31:0]  boot_address,
-	  output   [31:0]  instruction_address,
-	  input    [31:0]  instruction_in,
-	  output   [31:0]  data_rw_address,
-	  output   [31:0]  data_out,
-	  output           data_write_request,
-	  output   [3:0 ]  data_write_mask,
-	  input    [31:0]  data_in,
-	  input            interrupt_request_external,
-	  input            interrupt_request_timer,
-	  input            interrupt_request_software,  
+	input            clock,
+	input            reset,
+	input    [31:0]  boot_address,
+	output   [31:0]  instruction_address,
+	input    [31:0]  instruction_in,
+	output   [31:0]  data_rw_address,
+	output   [31:0]  data_out,
+	output           data_write_request,
+	output   [3:0 ]  data_write_mask,
+	input    [31:0]  data_in,
+	input            interrupt_request_external,
+	input            interrupt_request_timer,
+	input            interrupt_request_software,  
 	
 	// _I SIGNALS
 	output         clock_I,
@@ -296,23 +296,36 @@ module top(Bus2IP_Clk, Bus2IP_Reset, Bus2IP_Data, Bus2IP_RdCE, Bus2IP_WrCE, IP2B
 		.user_int(user_int_O)
 	);
 
-	iopads IOPADS_INST(
-		.Bus2IP_Clk(Bus2IP_Clk),
-		.Bus2IP_Reset(Bus2IP_Reset),
-		.Bus2IP_Data(Bus2IP_Data),
-		.Bus2IP_RdCE(Bus2IP_RdCE),
-		.Bus2IP_WrCE(Bus2IP_WrCE),
-		.IP2Bus_Data(IP2Bus_Data),
-		.user_int(user_int),
+	
+     iopads IOPADS_INST(
+          .pin(clock),
+          .pin_I(clock_I),
+          .pin(reset),
+          .pin_I(reset_I),
+          .pin(boot_address),
+          .pin_I(boot_address_I),
+          .pin(instruction_address),
+          .pin_I(instruction_address_O),
+          .pin(instruction_in),
+          .pin_I(instruction_in_I),
+          .pin(data_rw_address),
+          .pin_I(data_rw_address_O),
+          .pin(data_out),
+          .pin_I(data_out_O),
+          .pin(data_write_request),
+          .pin_I(data_write_request_O),
+          .pin(data_write_mask),
+          .pin_I(data_write_mask_O),
+          .pin(data_in),
+          .pin_I( data_in_I),
+          .pin(interrupt_request_external),
+          .pin_I(interrupt_request_external_I),
+          .pin(interrupt_request_timer),
+          .pin_I(interrupt_request_timer_I),
+          .pin(interrupt_request_software),
+          .pin_I(interrupt_request_software_I));
 
-		.Bus2IP_Clk_I(Bus2IP_Clk_I),
-		.Bus2IP_Reset_I(Bus2IP_Reset_I),
-		.Bus2IP_Data_I(Bus2IP_Data_I),
-		.Bus2IP_RdCE_I(Bus2IP_RdCE_I),
-		.Bus2IP_WrCE_I(Bus2IP_WrCE_I),
-		.IP2Bus_Data_O(IP2Bus_Data_O),
-		.user_int_O(user_int_O)
-	);
+
 endmodule
 module lt_unsigned(A, B, Z);
   input [31:0] A, B;
