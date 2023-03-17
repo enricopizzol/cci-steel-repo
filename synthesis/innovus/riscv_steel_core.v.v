@@ -3,27 +3,6 @@
 // Generated on: Dec 20 2022 14:15:41
 
 // Verification Directory fv/riscv_steel_core 
-module top (
-clock,clock_I,
-reset,reset_I,
-boot_address,boot_address_I,
-instruction_in,instruction_in_I,
-data_in, data_in_I,
-interrupt_request_external,interrupt_request_external_I,
-interrupt_request_timer,interrupt_request_timer_I,
-interrupt_request_software,interrupt_request_software_I,
-instruction_address,instruction_address_O,
-data_rw_address,data_rw_address_O,
-data_out,data_out_O,
-data_write_request,data_write_request_O,
-data_write_mask,data_write_mask_O);
-
-
-
-
-
-endmodule
-
 
 module iopads(
 clock,clock_I,
