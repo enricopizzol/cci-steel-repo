@@ -17,7 +17,8 @@ instruction_address,instruction_address_O,
 data_rw_address,data_rw_address_O,
 data_out,data_out_O,
 data_write_request,data_write_request_O,
-data_write_mask,data_write_mask_O);
+data_write_mask,data_write_mask_O,
+real_time);
 
 	input            clock;
 	input            reset;
@@ -31,7 +32,8 @@ data_write_mask,data_write_mask_O);
 	input    [31:0]  data_in;
 	input            interrupt_request_external;
 	input            interrupt_request_timer;
-	input            interrupt_request_software;  
+	input            interrupt_request_software;
+     input    [63:0] real_time; 
 	
 	// _I SIGNALS
 	output         clock_I;
@@ -286,7 +288,8 @@ instruction_address,instruction_address_O,
 data_rw_address,data_rw_address_O,
 data_out,data_out_O,
 data_write_request,data_write_request_O,
-data_write_mask,data_write_mask_O);
+data_write_mask,data_write_mask_O,
+real_time);
 
 
 	input            clock;
@@ -301,7 +304,8 @@ data_write_mask,data_write_mask_O);
 	input    [31:0]  data_in;
 	input            interrupt_request_external;
 	input            interrupt_request_timer;
-	input            interrupt_request_software;  
+	input            interrupt_request_software;
+     input    [63:0] real_time;    
 	
 	// _I SIGNALS
 	output         clock_I;
@@ -331,7 +335,8 @@ data_write_mask,data_write_mask_O);
      .data_in(data_in),
      .interrupt_request_external(interrupt_request_external), 
      .interrupt_request_timer(interrupt_request_timer),
-     .interrupt_request_software(interrupt_request_software)
+     .interrupt_request_software(interrupt_request_software),
+     .real_time(real_time); 
 	);
 
 
@@ -361,7 +366,8 @@ data_write_mask,data_write_mask_O);
           .data_write_request(data_write_request),
           .data_write_request_O(data_write_request_O),
           .data_write_mask(data_write_mask),
-          .data_write_mask_O(data_out_O)
+          .data_write_mask_O(data_out_O),
+          .real_time(real_time);
           );
 endmodule
 
