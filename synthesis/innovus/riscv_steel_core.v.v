@@ -289,6 +289,36 @@ data_out,data_out_O,
 data_write_request,data_write_request_O,
 data_write_mask,data_write_mask_O);
 
+
+	input            clock,
+	input            reset,
+	input    [31:0]  boot_address,
+	output   [31:0]  instruction_address,
+	input    [31:0]  instruction_in,
+	output   [31:0]  data_rw_address,
+	output   [31:0]  data_out,
+	output           data_write_request,
+	output   [3:0 ]  data_write_mask,
+	input    [31:0]  data_in,
+	input            interrupt_request_external,
+	input            interrupt_request_timer,
+	input            interrupt_request_software,  
+	
+	// _I SIGNALS
+	output         clock_I,
+	output         reset_I,
+	output [31:0]  boot_address_I,
+	input  [31:0]  instruction_address_I,
+	output [31:0]  instruction_in_I,
+	input  [31:0]  data_rw_address_I,
+	input  [31:0]  data_out_I,
+	input          data_write_request_I,
+	input  [3:0 ]  data_write_mask_I,
+	output [31:0]  data_in_I,
+	output         interrupt_request_external_I,
+	output         interrupt_request_timer_I,
+	output         interrupt_request_software_I,  
+
 	riscv_steel_core RISCV_INST(
      .clock(clock), 
      .reset(reset), 
