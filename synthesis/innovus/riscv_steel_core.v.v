@@ -18,7 +18,7 @@ data_rw_address,data_rw_address_O,
 data_out,data_out_O,
 data_write_request,data_write_request_O,
 data_write_mask,data_write_mask_O,
-real_time);
+);
 
 	input            clock;
 	input            reset;
@@ -33,7 +33,6 @@ real_time);
 	input            interrupt_request_external;
 	input            interrupt_request_timer;
 	input            interrupt_request_software;
-     input    [63:0] real_time; 
 	
 	// _I SIGNALS
 	output         clock_I;
@@ -367,7 +366,6 @@ real_time);
           .data_write_request_O(data_write_request_O),
           .data_write_mask(data_write_mask),
           .data_write_mask_O(data_out_O),
-          .real_time(real_time)
           );
 endmodule
 
