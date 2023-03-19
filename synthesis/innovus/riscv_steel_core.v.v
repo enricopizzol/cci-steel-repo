@@ -34,20 +34,20 @@ data_write_mask,data_write_mask_O
 	input            interrupt_request_timer;
 	input            interrupt_request_software;
 	
-	// IO SIGNALS
-	wire          clock_I;
-	wire          reset_I;
-	wire  [31:0]  boot_address_I;
-	wire  [31:0]  instruction_address_O;
-	wire  [31:0]  instruction_in_I;
-	wire  [31:0]  data_rw_address_O;
-	wire  [31:0]  data_out_O;
-	wire          data_write_request_O;
-	wire  [3:0 ]  data_write_mask_O;
-	wire  [31:0]  data_in_I;
-	wire          interrupt_request_external_I;
-	wire          interrupt_request_timer_I;
-	wire          interrupt_request_software_I;  
+	// _I SIGNALS
+	output wire         clock_I;
+	output wire         reset_I;
+	output wire [31:0]  boot_address_I;
+	input  wire [31:0]  instruction_address_O;
+	output wire [31:0]  instruction_in_I;
+	input  wire [31:0]  data_rw_address_O;
+	input  wire [31:0]  data_out_O;
+	input  wire         data_write_request_O;
+	input  wire [3:0 ]  data_write_mask_O;
+	output wire [31:0]  data_in_I;
+	output wire         interrupt_request_external_I;
+	output wire         interrupt_request_timer_I;
+	output wire         interrupt_request_software_I;  
 
 
 //pads
