@@ -35,19 +35,19 @@ data_write_mask,data_write_mask_O
 	input            interrupt_request_software;
 	
 	// _I SIGNALS
-	output wire         clock_I;
-	output wire         reset_I;
-	output wire [31:0]  boot_address_I;
-	input  wire [31:0]  instruction_address_O;
-	output wire [31:0]  instruction_in_I;
-	input  wire [31:0]  data_rw_address_O;
-	input  wire [31:0]  data_out_O;
-	input  wire         data_write_request_O;
-	input  wire [3:0 ]  data_write_mask_O;
-	output wire [31:0]  data_in_I;
-	output wire         interrupt_request_external_I;
-	output wire         interrupt_request_timer_I;
-	output wire         interrupt_request_software_I;  
+	output         clock_I;
+	output         reset_I;
+	output [31:0]  boot_address_I;
+	input  [31:0]  instruction_address_O;
+	output [31:0]  instruction_in_I;
+	input  [31:0]  data_rw_address_O;
+	input  [31:0]  data_out_O;
+	input          data_write_request_O;
+	input  [3:0 ]  data_write_mask_O;
+	output [31:0]  data_in_I;
+	output         interrupt_request_external_I;
+	output         interrupt_request_timer_I;
+	output         interrupt_request_software_I;  
 
 
 //pads
@@ -275,19 +275,19 @@ ICP PAD_interrupt_request_software_i(.PAD(interrupt_request_software),.Y(interru
 endmodule
 
 module top (
-clock,clock_I,
-reset,reset_I,
-boot_address,boot_address_I,
-instruction_in,instruction_in_I,
-data_in, data_in_I,
-interrupt_request_external,interrupt_request_external_I,
-interrupt_request_timer,interrupt_request_timer_I,
-interrupt_request_software,interrupt_request_software_I,
-instruction_address,instruction_address_O,
-data_rw_address,data_rw_address_O,
-data_out,data_out_O,
-data_write_request,data_write_request_O,
-data_write_mask,data_write_mask_O,
+clock,
+reset,
+boot_address,
+instruction_in,
+data_in, 
+interrupt_request_external,
+interrupt_request_timer,
+interrupt_request_software,
+instruction_address,
+data_rw_address,
+data_out,
+data_write_request,
+data_write_mask,
 real_time);
 
 
@@ -307,19 +307,19 @@ real_time);
      input    [63:0] real_time;    
 	
 	// _I SIGNALS
-	output         clock_I;
-	output         reset_I;
-	output [31:0]  boot_address_I;
-	input  [31:0]  instruction_address_O;
-	output [31:0]  instruction_in_I;
-	input  [31:0]  data_rw_address_O;
-	input  [31:0]  data_out_O;
-	input          data_write_request_O;
-	input  [3:0 ]  data_write_mask_O;
-	output [31:0]  data_in_I;
-	output         interrupt_request_external_I;
-	output         interrupt_request_timer_I;
-	output         interrupt_request_software_I;  
+	wire          clock_I;
+	wire          reset_I;
+	wire  [31:0]  boot_address_I;
+	wire  [31:0]  instruction_address_O;
+	wire  [31:0]  instruction_in_I;
+	wire  [31:0]  data_rw_address_O;
+	wire  [31:0]  data_out_O;
+	wire          data_write_request_O;
+	wire  [3:0 ]  data_write_mask_O;
+	wire  [31:0]  data_in_I;
+	wire          interrupt_request_external_I;
+	wire          interrupt_request_timer_I;
+	wire          interrupt_request_software_I;  
 
 	riscv_steel_core RISCV_INST(
      .clock(clock), 
