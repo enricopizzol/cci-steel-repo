@@ -288,7 +288,7 @@ data_rw_address,
 data_out,
 data_write_request,
 data_write_mask,
-real_time);
+);
 
 
 	input            clock;
@@ -335,7 +335,6 @@ real_time);
      .interrupt_request_external(interrupt_request_external), 
      .interrupt_request_timer(interrupt_request_timer),
      .interrupt_request_software(interrupt_request_software),
-     .real_time(real_time) 
 	);
 
 
@@ -1429,11 +1428,11 @@ module riscv_steel_core(clock, reset, boot_address,
      instruction_address, instruction_in, data_rw_address, data_out,
      data_write_request, data_write_mask, data_in,
      interrupt_request_external, interrupt_request_timer,
-     interrupt_request_software, real_time);
+     interrupt_request_software);
   input clock, reset, interrupt_request_external,
        interrupt_request_timer, interrupt_request_software;
   input [31:0] boot_address, instruction_in, data_in;
-  input [63:0] real_time;
+  wire [63:0] real_time;
   output [31:0] instruction_address, data_rw_address, data_out;
   output data_write_request;
   output [3:0] data_write_mask;
