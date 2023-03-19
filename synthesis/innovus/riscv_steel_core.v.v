@@ -321,7 +321,7 @@ real_time);
 	wire          interrupt_request_timer_I;
 	wire          interrupt_request_software_I;  
 
-	riscv_steel_core RISCV_INST(
+	riscv_steel_core top_INST(
      .clock(clock), 
      .reset(reset), 
      .boot_address(boot_address),
