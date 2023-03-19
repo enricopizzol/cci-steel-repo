@@ -1439,7 +1439,6 @@ module riscv_steel_core(clock, reset, boot_address,
   wire clock, reset, interrupt_request_external,
        interrupt_request_timer, interrupt_request_software;
   wire [31:0] boot_address, instruction_in, data_in;
-  wire [63:0] real_time;
   wire [31:0] instruction_address, data_rw_address, data_out;
   wire data_write_request;
   wire [3:0] data_write_mask;
