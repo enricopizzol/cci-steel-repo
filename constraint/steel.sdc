@@ -10,7 +10,7 @@ set_load_unit -picofarads 1
 create_clock -name {clock} -period 10.0 [get_ports {clock}]
 #create_clock -name {clock} -period 2.0 [get_ports {clock}]
 
-set_false_path -from [get_ports {Bus2IP_Reset}]
+set_false_path -from [get_ports {reset}]
 
 ## INPUTS
 set_input_delay -clock clock -max 0.2 [all_inputs]

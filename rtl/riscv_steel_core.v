@@ -219,14 +219,12 @@ module riscv_steel_core (
   input  wire           interrupt_request_software,
 
   // Real Time Counter (hardwire to zero if unused)
-  input  wire   [63:0]  real_time
-
   );
     
   // ----------------------------------------------------------------------------------------------
   // Declaration of buses, signals and registers
   // ----------------------------------------------------------------------------------------------
-  
+  wire   [63:0]  real_time
   reg   [31:0]  program_counter;
   reg   [31:0]  next_program_counter;
   reg   [31:0]  writeback_multiplexer_output;
@@ -1342,7 +1340,6 @@ module csr_file (
   input wire            mret,
     
   // Real Time counter value
-  input wire    [63:0]  real_time,
     
   // Hart state control signals
   output wire   [31:0]  exception_program_counter,
@@ -1375,7 +1372,7 @@ module csr_file (
   reg           mip_mtip;
   reg           mip_msip;
   reg           misaligned_address_exception;
-  
+  wire    [63:0]  real_time
   wire  [31:0]  csr_data_mask;
   wire  [31:0]  mstatus;
   wire  [31:0]  mie;
