@@ -287,7 +287,7 @@ instruction_address,
 data_rw_address,
 data_out,
 data_write_request,
-data_write_mask,
+data_write_mask
 );
 
 
@@ -334,7 +334,7 @@ data_write_mask,
      .data_in(data_in),
      .interrupt_request_external(interrupt_request_external), 
      .interrupt_request_timer(interrupt_request_timer),
-     .interrupt_request_software(interrupt_request_software),
+     .interrupt_request_software(interrupt_request_software)
 	);
 
 
