@@ -25,4 +25,4 @@ route_special -connect {block_pin core_pin pad_pin pad_ring floating_stripe} -la
 add_well_taps -cell FEED1 -cell_interval 20 -fixed_gap -prefix WELLTAP -in_row_offset 8.0
 
 ##Add power stripes
-eval_legacy { addStripe -skip_via_on_wire_shape Noshape -nets { gnd vdd }  -block_ring_top_layer_limit MET4 -max_same_layer_jog_length 0.88 -padcore_ring_bottom_layer_limit MET2 -set_to_set_distance 100 -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -padcore_ring_top_layer_limit MET4 -spacing 0.46 -merge_stripes_value 0.315 -layer MET3 -block_ring_bottom_layer_limit MET2 -width 0.44 -stacked_via_bottom_layer MET1 }
+eval_legacy { addStripe -skip_via_on_wire_shape Noshape -nets { gnd vdd }  -block_ring_top_layer_limit MET4 -max_same_layer_jog_length 0.88 -padcore_ring_bottom_layer_limit MET2 -set_to_set_distance 75 -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -padcore_ring_top_layer_limit MET4 -spacing 0.46 -merge_stripes_value 0.315 -layer MET3 -block_ring_bottom_layer_limit MET2 -width 0.44 -stacked_via_bottom_layer MET1 }
