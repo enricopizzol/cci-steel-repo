@@ -304,7 +304,7 @@ real_time);
 	input            interrupt_request_external;
 	input            interrupt_request_timer;
 	input            interrupt_request_software;
-     input    [63:0] real_time;    
+     wire    [63:0] real_time;    
 	
 	// _I SIGNALS
 	wire          clock_I;
