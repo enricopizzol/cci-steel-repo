@@ -64,7 +64,7 @@ set_db / .leakage_power_effort medium
 ####################################################################
 
 
-read_hdl ../rtl/riscv_steel_core.v
+read_verilog ../rtl/riscv_steel_core.v
 elaborate $DESIGN
 puts "Runtime & Memory after 'read_hdl'"
 time_info Elaboration
