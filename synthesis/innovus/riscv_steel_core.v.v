@@ -322,19 +322,19 @@ data_write_mask
 	wire          interrupt_request_software_I;  
 
 	riscv_steel_core top_INST(
-     .clock(clock), 
-     .reset(reset), 
-     .boot_address(boot_address),
-     .instruction_address(instruction_address), 
-     .instruction_in(instruction_in), 
-     .data_rw_address(data_rw_address), 
-     .data_out(data_out),
-     .data_write_request(data_write_request), 
-     .data_write_mask(data_write_mask), 
-     .data_in(data_in),
-     .interrupt_request_external(interrupt_request_external), 
-     .interrupt_request_timer(interrupt_request_timer),
-     .interrupt_request_software(interrupt_request_software)
+     .clock(clock_I),
+     .reset(reset_I),
+     .boot_address(boot_address_I),
+     .instruction_address(instruction_address_O),
+     .instruction_in(instruction_in_I),
+     .data_rw_address(data_rw_address_O),
+     .data_out(data_out_O),
+     .data_write_request(data_write_request_O),
+     .data_write_mask(data_write_mask_O),
+     .data_in(data_in_I),
+     .interrupt_request_external(interrupt_request_external_I),
+     .interrupt_request_timer(interrupt_request_timer_I),
+     .interrupt_request_software(interrupt_request_software_I),
 	);
 
 
