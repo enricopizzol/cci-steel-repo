@@ -1,0 +1,27 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+Options:	-common_ui 
+Date:		Sun Mar 19 14:49:49 2023
+Host:		pgmicro02 (x86_64 w/Linux 3.10.0-1160.80.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_49380_pgmicro02_rafael.trevisan_5S0igm.
+
+
+**INFO:  MMMC transition support version v31-84 
+
+Loading fill procedures ...
+[DEV]innovus 1> source physical/1_init.tcl 
+couldn't read file "innovus/riscv_steel_core.v.invs_init.tcl": no such file or directory
+[DEV]innovus 2> exit
+
+*** Memory Usage v#1 (Current mem = 452.480M, initial mem = 173.848M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:30.9, real=0:02:00, mem=452.5M) ---
