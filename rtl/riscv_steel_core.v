@@ -1340,7 +1340,7 @@ module csr_file (
   input wire            mret,
     
   // Real Time counter value
-    
+  input wire    [63:0]  real_time,  
   // Hart state control signals
   output wire   [31:0]  exception_program_counter,
   output reg    [1:0 ]  program_counter_source,
