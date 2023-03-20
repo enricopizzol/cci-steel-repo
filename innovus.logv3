@@ -1,0 +1,40 @@
+[03/19 14:49:49     0s] 
+[03/19 14:49:49     0s] Cadence Innovus(TM) Implementation System.
+[03/19 14:49:49     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/19 14:49:49     0s] 
+[03/19 14:49:49     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[03/19 14:49:49     0s] Options:	-common_ui 
+[03/19 14:49:49     0s] Date:		Sun Mar 19 14:49:49 2023
+[03/19 14:49:49     0s] Host:		pgmicro02 (x86_64 w/Linux 3.10.0-1160.80.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB)
+[03/19 14:49:49     0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/19 14:49:49     0s] 
+[03/19 14:49:49     0s] License:
+[03/19 14:49:49     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/19 14:49:49     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/19 14:50:02    11s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[03/19 14:50:02    11s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[03/19 14:50:02    11s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[03/19 14:50:02    11s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[03/19 14:50:02    11s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[03/19 14:50:02    11s] @(#)CDS: CPE v15.20-p002
+[03/19 14:50:02    11s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[03/19 14:50:02    11s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[03/19 14:50:02    11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/19 14:50:02    11s] @(#)CDS: RCDB 11.6
+[03/19 14:50:02    11s] --- Running on pgmicro02 (x86_64 w/Linux 3.10.0-1160.80.1.el7.x86_64) (10cores*40cpus*Intel(R) Xeon(R) CPU E5-2650L v2 @ 1.70GHz 25600KB) ---
+[03/19 14:50:02    11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_49380_pgmicro02_rafael.trevisan_5S0igm.
+
+[03/19 14:50:02    11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_49380_pgmicro02_rafael.trevisan_5S0igm.
+[03/19 14:50:02    11s] 
+[03/19 14:50:03    12s] 
+[03/19 14:50:03    12s] **INFO:  MMMC transition support version v31-84 
+[03/19 14:50:03    12s] 
+[03/19 14:50:04    13s] Loading fill procedures ...
+[03/19 14:50:06    14s] [DEV]innovus 1> source physical/1_init.tcl 
+[03/19 14:51:15    25s] couldn't read file "innovus/riscv_steel_core.v.invs_init.tcl": no such file or directory
+[DEV]innovus 2> exit
+
+[03/19 14:51:49    31s] *** Memory Usage v#1 (Current mem = 452.480M, initial mem = 173.848M) ***
+[03/19 14:51:49    31s] *** Message Summary: 0 warning(s), 0 error(s)
+[03/19 14:51:49    31s] 
+[03/19 14:51:49    31s] --- Ending "Innovus" (totcpu=0:00:30.9, real=0:02:00, mem=452.5M) ---
