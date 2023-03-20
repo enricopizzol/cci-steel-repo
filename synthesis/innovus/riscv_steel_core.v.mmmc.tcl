@@ -10,7 +10,7 @@ create_library_set -name default_emulate_libset_max \
               /pdk/xfab/XC018_61_3.1.3/synopsys/xc018/MOS5ST/IO_CELLS_5V_MOS5ST_typ_1_80V_4_50V_25C.lib }
 
 ## opcond
-create_opcond -name default_emulate_opcond -process 1.0 -voltage 1.799999 -temperature 25.0
+create_opcond -name default_emulate_opcond -process 1.0 -voltage 4.50000 -temperature 25.0
 
 ## timing_condition
 create_timing_condition -name default_emulate_timing_cond_max \

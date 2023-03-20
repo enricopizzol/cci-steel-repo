@@ -254,9 +254,6 @@ ICP PAD_interrupt_request_external_i(.PAD(interrupt_request_external),.Y(interru
 ICP PAD_interrupt_request_timer_i(.PAD(interrupt_request_timer),.Y(interrupt_request_timer_I));
 ICP PAD_interrupt_request_software_i(.PAD(interrupt_request_software),.Y(interrupt_request_software_I));
 
-
-
-
 	VDDORPADP PAD_vdd_E();
 	VDDPADP PAD_vdd_core_E();
 
@@ -274,7 +271,7 @@ ICP PAD_interrupt_request_software_i(.PAD(interrupt_request_software),.Y(interru
 	
 endmodule
 
-module top (
+module top(
 clock,
 reset,
 boot_address,
@@ -304,7 +301,6 @@ data_write_mask
 	input            interrupt_request_external;
 	input            interrupt_request_timer;
 	input            interrupt_request_software;
-     wire    [63:0] real_time;    
 	
 	// _I SIGNALS
 	wire          clock_I;
@@ -321,7 +317,7 @@ data_write_mask
 	wire          interrupt_request_timer_I;
 	wire          interrupt_request_software_I;  
 
-	riscv_steel_core top_INST(
+	riscv_steel_core RISCV_STEEL_INST(
      .clock(clock), 
      .reset(reset), 
      .boot_address(boot_address),
