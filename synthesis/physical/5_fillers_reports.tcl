@@ -11,6 +11,9 @@
 add_fillers -base_cells FEED1 FEED2 FEED3 FEED5 FEED7 FEED10 FEED15 FEED25  -prefix FILLER
 ##Generate reports
 report_summary -out_dir summaryReport
+add_metal_fill
+trim_metal_fill
+set_db timing_analysis_type ocv
 time_design -post_route
 
 #check geometry
