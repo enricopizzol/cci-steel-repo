@@ -160,7 +160,7 @@ Pad: IOPADS_INST/PAD_data_out28_o E BD8P
 Pad: IOPADS_INST/PAD_data_out29_o E BD8P
 Pad: IOPADS_INST/PAD_data_out30_o E BD8P
 Pad: IOPADS_INST/PAD_data_out31_o E BD8P
-Pad: IOPADS_INST/PAD_data_write_request_o W BD8P
+Pad: IOPADS_INST/PAD_data_write_request_o N BD8P
 Pad: IOPADS_INST/PAD_data_write_mask0_o N BD8P
 Pad: IOPADS_INST/PAD_data_write_mask1_o N BD8P
 Pad: IOPADS_INST/PAD_data_write_mask2_o N BD8P
@@ -197,9 +197,9 @@ Pad: IOPADS_INST/PAD_data_in28_i W ICP
 Pad: IOPADS_INST/PAD_data_in29_i W ICP
 Pad: IOPADS_INST/PAD_data_in30_i W ICP
 Pad: IOPADS_INST/PAD_data_in31_i W ICP
-Pad: IOPADS_INST/PAD_interrupt_request_external_i N ICP
-Pad: IOPADS_INST/PAD_interrupt_request_timer_i N ICP
-Pad: IOPADS_INST/PAD_interrupt_request_software_i N ICP
+Pad: IOPADS_INST/PAD_interrupt_request_external_i S ICP
+Pad: IOPADS_INST/PAD_interrupt_request_timer_i S ICP
+Pad: IOPADS_INST/PAD_interrupt_request_software_i S ICP
 
 
 
