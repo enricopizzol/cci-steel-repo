@@ -13,8 +13,6 @@
 delete_global_net_connections
 connect_global_net vdd -type pg_pin -pin_base_name vdd! -inst_base_name *
 connect_global_net gnd -type pg_pin -pin_base_name gnd! -inst_base_name *
-connect_global_net vdd -type tie_hi -inst_base_name *
-connect_global_net gnd -type tie_lo -inst_base_name *
 
 ##Generate power ring with 0.25um spacing (between metal lines), 0.5um width and 1.5um offset from the core. Use M1 for horizontal and M2 for vertical
 eval_legacy { addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer METTP -type core_rings -jog_distance 0.315 -threshold 0.315 -nets {vdd gnd} -follow core -stacked_via_bottom_layer MET1 -layer {bottom MET3 top MET3 right MET4 left MET4} -width 0.44 -spacing 0.46 -offset 0.63 }
